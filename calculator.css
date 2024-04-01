@@ -1,0 +1,79 @@
+.c-button
+{background-color: white;
+     border-color:rgb(0, 0, 206) ;
+     font-size: 30px;
+     font-weight: bold;
+     border-style: solid;
+     border-width: 1px;
+     color:rgb(18, 18, 190);
+     height: 60px;
+     width: 120px;
+     border-radius: 8px;
+     padding-left: 16PX;
+   padding-right: 16PX;
+   padding-bottom: 16px;
+   padding-top: 10px;
+   cursor: pointer;
+   margin-bottom: 30px;
+   margin-left: 60px;
+     transition: background-color 0.15s, color 0.15s;}
+     .c-button:hover
+     {background-color: rgb(16, 16, 224);
+   color: white; }
+   .c-button:active
+{ opacity:1;}
+     .c-input
+     {text-align: center;
+          padding-left: 10px;
+          font-size: 20px;
+          font-weight: bold;
+          border-width: 1px;
+          border-style: solid;
+          box-shadow: inset 1px 2px 3px rgb(0, 0, 0.05);
+          width: 600px;
+          height: 39px;
+          margin-bottom: 30px;
+          margin-left: 60px;
+          flex: 1;}
+          .head
+          {text-align: center;
+          font-size: 70px;
+          font-weight: bold;
+          font-family: arial;
+          margin-bottom: 50px;}
+          .hood
+          {text-align: center;
+          font-size: 60px;
+          font-weight: bold;
+          font-family: arial;
+          margin-bottom: 50px;}
+          .para
+{font-size: 39px;
+  font-family: Arial, Helvetica, sans-serif;
+text-align: center;
+margin-top: 50px;
+margin-bottom: 50px;}
+.feedbac
+  {text-align: center;
+    padding-left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    border-width: 1px;
+    border-style: solid;
+    box-shadow: inset 1px 2px 3px rgb(0, 0, 0.05);
+    width: 500px;
+    height: 50px;
+    margin-bottom: 30px;
+    flex: 1;}
+    .feedback
+{text-align: center;
+  padding-left: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  border-width: 1px;
+  border-style: solid;
+  box-shadow: inset 1px 2px 3px rgb(0, 0, 0.05);
+  width: 500px;
+  height: 200px;
+  margin-bottom: 30px;
+  flex: 1;}

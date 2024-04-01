@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>Calculator</title>
+  <link rel="stylesheet" href="calculator.css">
+</head>
+<body style="margin-top: 50px; margin-bottom: 100px;">
+  <div>
+    <p class="head" id="welcome-text"></p>
+    <p class="para"> This calculator will help you </p>
+    <p id="dynamicText" class="para" > </p>
+    <p class="para"> You can also refer to the calculator’s guide, below it</p>  
+  </div>
+  <div style="width: 750px;
+  margin: auto;
+  border: 1px solid #ccc;
+  padding: 10px;
+  ">
+      <input class="c-input" type="text" id="display" disabled><br>
+      <input class="c-button" type="button" value="7" onclick="addToDisplay('7')">
+      <input class="c-button" type="button" value="8" onclick="addToDisplay('8')">
+      <input class="c-button" type="button" value="9" onclick="addToDisplay('9')">
+      <input class="c-button" type="button" value="+" onclick="addToDisplay('+')"><br>
+      <input class="c-button" type="button" value="4" onclick="addToDisplay('4')">
+      <input class="c-button" type="button" value="5" onclick="addToDisplay('5')">
+      <input class="c-button" type="button" value="6" onclick="addToDisplay('6')">
+      <input class="c-button" type="button" value="-" onclick="addToDisplay('-')"><br>
+      <input class="c-button" type="button" value="1" onclick="addToDisplay('1')">
+      <input class="c-button" type="button" value="2" onclick="addToDisplay('2')">
+      <input class="c-button" type="button" value="3" onclick="addToDisplay('3')">
+      <input class="c-button" type="button" value="*" onclick="addToDisplay('*')"><br>
+      <input class="c-button" type="button" value="0" onclick="addToDisplay('0')">
+      <input class="c-button" type="button" value="." onclick="addToDisplay('.')">
+      <input class="c-button" type="button" value="±" onclick="toggleSign()">
+      <input class="c-button" type="button" value="←" onclick="backspace()"><br>
+      <input class="c-button" type="button" value="√" onclick="calculateRoot()">
+      <input class="c-button" type="button" value="^" onclick="calculatePower()">
+      <input class="c-button" type="button" value="(" onclick="addToDisplay('(')">
+      <input class="c-button" type="button" value=")" onclick="addToDisplay(')')"><br>
+      <input class="c-button" type="button" value="C" onclick="clearDisplay()">
+      <input class="c-button" type="button" value="=" onclick="calculate()">
+  </div>
+  <div>
+    <p class="hood">Basic Arithmetic Operations:</p>
+    <p class="para"> You can perform addition (+), subtraction (-), multiplication (*), and division (/) using this calculator. To input numbers and perform basic arithmetic operations, simply click the respective buttons on the calculator interface. For example, to calculate 5 + 3, click the buttons '5', '+', and '3' in that order, and then click the '=' button to see the result.</p>
+    <p class="hood"> Clearing the Display:</p>
+    <p class="para"> If you make a mistake or want to clear the display, you can click the 'C' button. This will clear the input and reset the display to zero. You can also click the backspace "←" button which will remove the last digit</p>
+    <p class="hood"> Calculating Roots:</p>
+    <p class="para"> To calculate roots, click the '√' button. You will be prompted to enter the specific root you want to calculate (2 for square root, 3 for cube root, etc.). Enter the desired root and press 'OK'. The calculator will then display the result. For example, to calculate the square root of 25, first select 25 then click the '√' button, enter '2', and press 'OK'. The result will be displayed on the screen.</p>
+    <p class="hood"> Raising Numbers to Powers:</p>
+    <p class="para"> To raise a number to a power, click the '^' button. You will be prompted to enter the specific power you want to raise the number to (2, 3, 4, etc.). Enter the desired power and press 'OK'. The calculator will then display the result. For example, to raise 5 to the power of 3. First select 5 then click the '^' button, enter '3', and press 'OK'. The result will be displayed on the screen.</p>
+    <p class="head"> Note:</p>
+    <p class="para">Ensure that you enter valid numbers and roots/powers greater than or equal to 2. Invalid inputs will result in an error message. Use the calculator with caution, and always double-check your inputs and results, especially for complex calculations.</p><br>
+    <p class="para"> That's it! You're now ready to use my calculator for performing various arithmetic operations, calculating roots, and raising numbers to powers. If you have any questions or encounter any issues, feel free to refer back to this guide or seek assistance by sending me a feedback.</p>
+    <form action="send_feedback.php" method="post"></form>
+    <label class="para" for="name">Your Name:</label><br>
+    <input class="feedbac" type="text" id="name" name="name" name="name"> <br>
+    <label class="para" for="email"> Your Email:</label><br>
+    <input class="feedbac" type="email" id="email" name="email"><br>
+    <label class="para" for="Feedback"> Feedback:</label><br>
+    <textarea class="feedback" id="Feedback" name="Feedback" ></textarea> <br><br>
+    <input class="c-button" type="Submit" value="Submit">
+    <p class="head"> Happy calculating!</p>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
